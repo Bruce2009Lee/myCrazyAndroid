@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/increase"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="增大透明度"/>
+        <Button
+            android:id="@+id/next_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="下一张"/>
+
+        <Button
+            android:id="@+id/decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="降低透明度"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/shuangta"
+        android:scaleType="fitCenter"
+        android:layout_margin="5dp"/>
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#00f"
+        android:layout_margin="5dp"/>
+</LinearLayout>

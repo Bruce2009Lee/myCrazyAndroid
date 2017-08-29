@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.exp.testtableview.MainActivity">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="1"
+        android:stretchColumns="2">
+
+
+        <Button android:id="@+id/ok1"
+                android:layout_height="wrap_content"
+                android:text="alone">
+        </Button>
+
+        <TableRow>
+            <Button android:id="@+id/ok2"
+                    android:layout_height="wrap_content"
+                    android:text="alone"/>
+            <Button android:id="@+id/ok3"
+                    android:layout_height="wrap_content"
+                    android:text="alone"/>
+
+            <Button android:id="@+id/ok4"
+                    android:layout_height="wrap_content"
+                    android:text="alone"/>
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:collapseColumns="1">
+
+        <Button android:id="@+id/ok5"
+                android:layout_height="wrap_content"
+                android:text="alone">
+        </Button>
+
+        <TableRow>
+            <Button android:id="@+id/ok6"
+                    android:layout_height="wrap_content"
+
+                    android:text="alone"/>
+            <Button android:id="@+id/ok7"
+                    android:layout_height="wrap_content"
+                    android:text="alone"/>
+
+            <Button android:id="@+id/ok8"
+                    android:layout_height="wrap_content"
+                    android:text="alone"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2">
+
+        <Button android:id="@+id/ok9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="alone">
+        </Button>
+
+        <TableRow>
+            <Button android:id="@+id/ok10"
+                    android:layout_height="wrap_content"
+
+                    android:text="alone"/>
+            <Button android:id="@+id/ok11"
+                    android:layout_height="wrap_content"
+                    android:text="alone"/>
+
+            <Button android:id="@+id/ok12"
+                    android:layout_height="wrap_content"
+                    android:text="alone"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</LinearLayout>
