@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="input your register info"
+        android:textSize="20sp"/>
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="User name"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_height="wrap_content"
+            android:hint="input your register account"
+            android:selectAllOnFocus="true"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/user_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="true"
+            android:inputType="textPassword"
+            android:hint="input your register account"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sex"
+            android:textSize="16sp"/>
+        <RadioGroup
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/user_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gentle Man"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/user_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lady"
+                android:textSize="16sp"/>
+        </RadioGroup>
+    </TableRow>
+    <Button
+        android:id="@+id/user_register"
+        android:layout_height="wrap_content"
+        android:text="register"
+        android:textSize="16sp"/>
+
+</TableLayout>

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">testTableView</string>
+    <string name="show_press">please press down</string>
 </resources>

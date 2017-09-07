@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/show_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show web view"
+        android:textColor="@drawable/my_image"/>
+
+    <Button
+        android:id="@+id/edit_first_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="edit first contact"
+        android:textColor="@drawable/my_image"/>
+
+    <Button
+        android:id="@+id/dial_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dial phone"
+        android:textColor="@drawable/my_image"/>
+
+</LinearLayout>

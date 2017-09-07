@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.exp.testtableview">
+    <!--<uses-permission android:name="android.permission.VIBRATE"/>-->
+    <!--<uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>-->
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -37,11 +44,152 @@
         </activity>
 
         <activity android:name=".ActivityAdapterViewFlipper">
+
+        </activity>
+
+
+        <activity android:name=".ActivityNotification"
+            android:configChanges="orientation|screenSize|keyboard">
+
+        </activity>
+
+        <activity android:name=".ActivityOtherActivity">
+
+        </activity>
+
+        <activity android:name=".ActivityHandler">
+
+        </activity>
+
+        <activity android:name=".ActivityAsyncTask">
+
+        </activity>
+
+
+        <activity android:name=".ActivityBundleMain">
+
+        </activity>
+        <activity android:name=".ActivityBundleResult">
+
+        </activity>
+
+
+        <activity
+            android:name=".ActivityDataAttr"
+            android:label="@string/app_name" >
+
+        </activity>
+        <activity
+            android:icon="@drawable/ic_scheme"
+            android:name=".ActivityDataScheme"
+            android:label="指定scheme的Activity">
+            <intent-filter>
+                <action android:name="xx" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 只要Intent的Data属性的scheme是lee，即可启动该Activity -->
+                <data android:scheme="lee" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:icon="@drawable/ic_host"
+            android:name=".ActivityDataSchemeHostPort"
+            android:label="指定scheme、host、port的Activity">
+            <intent-filter>
+                <action android:name="xx" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 只要Intent的Data属性的scheme是lee，且host是www.fkjava.org,port是8888即可启动该Activity -->
+                <data android:scheme="lee"
+                      android:host="www.fkjava.org"
+                      android:port="8888" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:icon="@drawable/ic_sp"
+            android:name=".ActivityDataSchemeHostPath"
+            android:label="指定scheme、host、path的Activity">
+            <intent-filter>
+                <action android:name="xx" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 只要Intent的Data属性的scheme是lee，且host是www.fkjava.org,path是/mypath，即可启动该Activity -->
+                <data android:scheme="lee"
+                      android:host="www.fkjava.org"
+                      android:path="/mypath" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:icon="@drawable/ic_path"
+            android:name=".ActivityDataSchemeHostPortPath"
+            android:label="指定scheme、host、port、path的Activity">
+            <intent-filter>
+                <action android:name="xx" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 需要Intent的Data属性的scheme是lee，且host是www.fkjava.org,port是8888，且path是/mypath，才可启动该Activity -->
+                <data android:scheme="lee"
+                      android:host="www.fkjava.org"
+                      android:port="8888"
+                      android:path="/mypath"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:icon="@drawable/ic_type"
+            android:name=".ActivityDataSchemeHostPortPathType"
+            android:label="指定scheme、host、port、path、type的Activity">
+            <intent-filter>
+                <action android:name="xx"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 需要Intent的Data属性的scheme是lee，且host是www.fkjava.org,port是8888，且path是/mypath,且type是abc/xyz，才可启动该Activity -->
+                <data android:scheme="lee"
+                      android:host="www.fkjava.org"
+                      android:port="8888"
+                      android:path="/mypath"
+                      android:mimeType="abc/xyz"/>
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".ActivityActionData">
+
+        </activity>
+
+        <activity android:name=".ActivityAnimation">
+
+        </activity>
+
+        <activity android:name=".ActivityGesture">
+
+        </activity>
+
+        <activity android:name=".ActivityGestureFliper">
+
+        </activity>
+
+        <provider
+            android:authorities="com.exp.testtableview.FirstProvider"
+            android:name=".FirstProvider"
+            android:exported="true">
+
+        </provider>
+        <activity android:name=".ActivityContentResolver">
+
+        </activity>
+
+        <activity android:name=".ActivityAlarmWallpaper">
+
+
+        </activity>
+        <service android:name=".ChangeWallpaperService">
+
+        </service>
+
+        <activity android:name=".ActivityMusicBoxMain">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name=".MusicService"></service>
 
     </application>
 
